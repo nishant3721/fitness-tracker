@@ -1,0 +1,35 @@
+@import url("../../style.css");
+
+.section-contact {
+  background: var(--color-primary);
+  height: 100vh;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.section-contact h1 {
+  color: var(--text-color-light);
+  font-family: var(--font-style-bold);
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.section-contact-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-contact__form input,
+.section-contact__form textarea {
+  width: 60rem;
+  display: block;
+  background-color: inherit;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: 1px solid var(--color-secondary);
+  color: var(--text-color-light);
+  font-family: var(--font-style-regular);
+  font-size: 1.6rem;
+}

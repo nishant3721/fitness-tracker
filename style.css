@@ -54,6 +54,7 @@ html {
   font-size: 1.8rem;
   color: var(--text-color-light);
   border: none;
+  text-decoration: none;
 }
 
 /* hero section start*/
@@ -153,3 +154,116 @@ html {
   font-size: 1.4rem;
 }
 /* why us end */
+
+/* registration start */
+.section-registration {
+  text-align: center;
+  color: var(--text-color-light);
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(2, 0, 36),
+      rgba(2, 0, 36, 0.8)
+    ),
+    url("./assets/images/register.avif");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.section-registration h1 {
+  font-size: 3.5rem;
+  font-family: var(--font-style-bold);
+}
+
+.section-registration__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.section-registration__content p {
+  color: var(--text-color-muted);
+  font-family: var(--font-style-regular);
+  font-size: 1.8rem;
+  margin: 3rem 0;
+}
+/* registration end */
+
+/* section price start */
+.section-price {
+  background: var(--color-primary);
+  padding: 5rem 0;
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+.section-price p:first-child {
+  font-family: var(--font-style-regular);
+  font-size: 2.8rem;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.section-price h1 {
+  font-family: var(--font-style-bold);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.section-price__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.section-price__content__card {
+  border: 1px solid #333333;
+  padding: 5rem;
+  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+}
+
+.section-price__content__card h1 {
+  font-size: 6rem;
+  color: var(--color-secondary);
+  font-family: var(--font-style-bold);
+}
+
+.section-price__content__card h2 {
+  font-size: 2.3rem;
+  font-family: var(--font-style-bold);
+}
+
+.section-price__content__card h5 {
+  font-size: 2rem;
+  font-family: var(--font-style-regular);
+  color: var(--text-color-muted);
+  margin-bottom: 4rem;
+}
+
+.section-price__content__card p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  color: var(--text-color-muted);
+  font-family: var(--font-style-bold);
+}
+
+.section-price__content__card button {
+  font-size: 1.8rem;
+  font-family: var(--font-style-bold);
+  background-color: #333333;
+  border: none;
+  padding: 1rem 0;
+  width: 100%;
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-price__content__card button:hover {
+  background-color: var(--color-secondary);
+}
+
+/* section price end */
