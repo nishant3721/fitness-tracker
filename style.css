@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Poppins-thin";
+  src: url("./assets/fonts/Poppins-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+:root {
+  --color-primary: #0a0a0a;
+  --color-secondary: #f36100;
+  --text-color-light: #fff;
+  --text-color-muted: #a9a9a9;
+  --text-color-dark: #000;
+  --font-style-regular: "Poppins-regular";
+  --font-style-thin: "Poppins-thin";
+  --font-style-bold: "Poppins-bold";
+}
+
+/* Basic Resets */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Global css */
+.heading-primary {
+  font-size: 6.8rem;
+  font-family: var(--font-style-bold);
+}
+
+.btn-primary {
+  background-color: var(--color-secondary);
+  padding: 1rem 3rem;
+  font-family: var(--font-style-regular);
+  font-size: 1.8rem;
+  color: var(--text-color-light);
+  border: none;
+}
+
+/* hero section start*/
+.section-hero {
+  color: var(--text-color-light);
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(2, 0, 36),
+      rgba(2, 0, 36, 0.8)
+    ),
+    url("./assets/images/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.section-hero__content-box {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.section-hero__content-box h1 span {
+  color: var(--color-secondary);
+}
+
+.section-hero__content-box h1 {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.section-hero__content-box h5 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: var(--font-style-bold);
+}
+/* hero section end*/
+
+/* why us start */
+.section-why-us {
+  background: var(--color-primary);
+  height: 70vh;
+  padding: 5rem 0;
+}
+
+.section-why-us h5 {
+  color: var(--color-secondary);
+  font-size: 2rem;
+}
+
+.section-why-us h2 {
+  font-size: 3.5rem;
+  color: var(--text-color-light);
+}
+
+.section-why-us h5,
+.section-why-us h2 {
+  font-family: var(--font-style-bold);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-why-us__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-why-us__img-box {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.section-why-us__img-box div {
+  margin: 0 5rem;
+}
+
+.section-why-us__img-box div img {
+  width: 10rem;
+  height: 10rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.section-why-us__img-box div h3 {
+  color: var(--text-color-light);
+  font-family: var(--font-style-bold);
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.section-why-us__img-box div p {
+  color: var(--text-color-muted);
+  font-family: var(--font-style-regular);
+  font-size: 1.4rem;
+}
+/* why us end */
